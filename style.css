@@ -1,0 +1,997 @@
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    height: 100vh;
+}
+
+body::selection {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.788);
+}
+
+
+.header {
+    display: flex;
+    height: 40%;
+    margin: 50px;
+    padding: 20px;
+    margin-right: 100px;
+    margin-left: 100px;
+    background-color: rgba(128, 128, 128, 0.11);
+    border-radius: 20px;
+    box-shadow: 10px 10px 40px 1px rgba(128, 128, 128, 0.336);
+}
+
+.my-name {
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+}
+
+.img-div {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+
+
+}
+
+img {
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 10px 10px 40px 1px rgba(128, 128, 128, 0.63);
+    transition: transform 0.3s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.08);
+}
+
+h1,
+h2,
+h3,
+p,
+.a-class {
+    margin: 2px;
+    font-family: "Libre Baskerville", serif;
+    letter-spacing: 2px;
+}
+
+p {
+    letter-spacing: 3px;
+}
+
+h1 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.a-class {
+    display: block;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.849);
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 15px;
+    letter-spacing: normal;
+    font-size: 15px;
+    margin-top: 10px;
+    flex-basis: 7px;
+    cursor: pointer;
+    margin-left: 7rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.a-class:hover {
+    background-color: rgb(219, 219, 219);
+    color: black;
+    transform: scale(1.07);
+}
+
+.a-class:hover::selection {
+    background-color: rgb(219, 219, 219);
+}
+
+.a-class:active {
+    transform: scale(1.20);
+}
+
+
+hr {
+    box-shadow: 10px 10px 40px 1px rgba(128, 128, 128, 0.603);
+}
+
+.about_me_h2 {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.about-me {
+    display: flex;
+    height: 40%;
+    margin: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
+    padding: 30px;
+    background-color: rgba(128, 128, 128, 0.11);
+    border-radius: 20px;
+    box-shadow: 10px 10px 40px 1px rgba(128, 128, 128, 0.336);
+}
+
+.Skills_h2 {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.Skills {
+    display: flex;
+    height: 40%;
+    margin: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
+    background-color: rgba(128, 128, 128, 0.11);
+    border-radius: 20px;
+    box-shadow: 10px 10px 40px 1px rgba(128, 128, 128, 0.336);
+}
+
+
+ul li {
+    height: fit-content;
+    list-style: none;
+    font-family: "Libre Baskerville", serif;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.123);
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+    border: solid 0.1px rgba(128, 128, 128, 0.459);
+}
+
+ul li:hover {
+    transform: scale(1.06);
+    cursor: default;
+}
+
+ul {
+    display: flex;
+    gap: 50px;
+    padding: 50px;
+
+}
+
+.Contact-h2 {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.Contact {
+    display: flex;
+    height: 10%;
+    margin: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
+
+}
+
+.email-icon,
+.insta-icon,
+.linkedin-icon,
+.githup-icon {
+    height: fit-content;
+    font-size: 20px;
+    display: block;
+    width: fit-content;
+    background-color: rgba(214, 214, 214, 0.733);
+    padding: 5px;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    margin-top: 5px;
+    flex-basis: 7px;
+    cursor: pointer;
+    margin-left: 1.5rem;
+    color: inherit;
+
+}
+
+.email-icon,
+.insta-icon,
+.linkedin-icon,
+.githup-icon:active {
+    color: inherit;
+}
+
+.email-icon,
+.insta-icon,
+.linkedin-icon,
+.githup-icon:visited {
+    color: inherit;
+}
+
+.email-icon {
+    margin-left: 0;
+}
+
+.end-hr {
+    width: 80%;
+    margin-left: 8rem;
+
+}
+
+
+.footer {
+    display: flex;
+}
+
+.copywrite-para {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: normal;
+    color: rgba(0, 0, 0, 0.568);
+    display: block;
+    margin-left: 8rem;
+    padding: 3px;
+}
+
+.whats-num {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: normal;
+    color: rgba(0, 0, 0, 0.568);
+    display: block;
+    margin-left: 35rem;
+    padding: 3px;
+}
+
+.active{
+  background:linear-gradient(to right,white,rgba(110, 110, 110, 0.349));
+  border: solid 1.5px rgba(90, 90, 90, 0.767);
+   box-shadow: 10px 10px 40px 1px rgba(128, 128, 128, 0.336);
+}
+
+
+@media (min-width: 320px) and (max-width:390px) {
+
+    body {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .header {
+        display: flex;
+        height: 100%;
+        width: fit-content;
+        margin: 30px;
+        padding: 10px;
+    }
+
+    .img-div {
+        text-align: center;
+        padding: 10px;
+        margin-top: 4rem;
+    }
+
+    img {
+        height: 60%;
+        width: 100%;
+        object-fit: cover;
+
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    .a-class {
+        margin: 2px;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+
+    h1 {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    h2 {
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 13;
+        margin-top:5px;
+        letter-spacing: 2px;
+    }
+
+    .a-class {
+        width: fit-content;
+        padding: 5px;
+        font-size: 10px;
+        margin-left: 1.5rem;
+    }
+
+    .about_me_h2 {
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+
+    .about-me {
+        height: fit-content;
+        width: fit-content;
+        margin: 30px;
+        padding: 10px;
+
+    }
+
+    .Skills {
+        height: fit-content;
+        width: fit-content;
+        margin: 15%;
+        padding: 10px;
+    }
+
+    ul li {
+        height: fit-content;
+        font-size: 0.6rem;
+        margin-top: 10px;
+        padding: 10px;
+       
+    }
+
+    ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    padding: 15px;
+
+}
+
+.Contact-h2 {
+    text-align: center;
+}
+
+.Contact {
+    display: flex;
+    height: 10%;
+    margin: 50px;
+    margin-left: 14%;
+
+}
+
+.email-icon,
+.insta-icon,
+.linkedin-icon,
+.githup-icon {
+  
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 11%;
+}
+
+.end-hr {
+    width: 80%;
+    margin-left: 11%;
+
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.copywrite-para {
+    font-size: xx-small;
+    margin-left: 10%;
+}
+
+.whats-num {
+   font-size: xx-small;
+   margin-left: 10%;
+
+}
+}
+
+@media (min-width:391px) and (max-width:449px){
+   
+
+body {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .header {
+        display: flex;
+        height: 100%;
+        width: fit-content;
+        margin: 30px;
+        padding: 10px;
+    }
+
+    .img-div {
+        text-align: center;
+        padding: 10px;
+        margin-top: 4rem;
+    }
+
+
+    h1,
+    h2,
+    h3,
+    p,
+    .a-class {
+        margin: 2px;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+
+    h1 {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    h2 {
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 13;
+        margin-top:5px;
+        letter-spacing: 2px;
+    }
+
+    .a-class {
+        width: fit-content;
+        padding: 5px;
+        font-size: 10px;
+        margin-left: 1.5rem;
+    }
+
+    .about_me_h2 {
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+
+    .about-me {
+        height: fit-content;
+        width: fit-content;
+        margin: 30px;
+        padding: 10px;
+
+    }
+
+    .Skills {
+        height: fit-content;
+        width: fit-content;
+        margin: 15%;
+        padding: 10px;
+    }
+
+    ul li {
+        height: fit-content;
+        font-size: 0.6rem;
+        margin-top: 10px;
+        padding: 10px;
+       
+    }
+
+    ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    padding: 15px;
+
+}
+
+.Contact-h2 {
+    text-align: center;
+}
+
+
+.email-icon,
+.insta-icon,
+.linkedin-icon,
+.githup-icon {
+  
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 11%;
+}
+
+.end-hr {
+    width: 80%;
+    margin-left: 11%;
+
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.copywrite-para {
+    font-size: xx-small;
+    margin-left: 10%;
+}
+
+.whats-num {
+   font-size: xx-small;
+   margin-left: 10%;
+
+}
+
+    img {
+        height: 80%;
+        width: 80%;
+        object-fit: cover;
+
+    }
+
+    .Contact {
+    margin-left: 20%;
+
+}
+}
+
+@media (min-width:450px) and (max-width:579px){
+   
+
+body {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .header {
+        display: flex;
+        height: 100%;
+        width: fit-content;
+        margin: 30px;
+        padding: 10px;
+    }
+
+    .img-div {
+        text-align: center;
+        padding: 10px;
+        margin-top: 4rem;
+    }
+
+
+    h1,
+    h2,
+    h3,
+    p,
+    .a-class {
+        margin: 2px;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+
+    h1 {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    h2 {
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 13;
+        margin-top:5px;
+        letter-spacing: 2px;
+    }
+
+    .a-class {
+        width: fit-content;
+        padding: 5px;
+        font-size: 10px;
+        margin-left: 1.5rem;
+    }
+
+    .about_me_h2 {
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+
+    .about-me {
+        height: fit-content;
+        width: fit-content;
+        margin: 30px;
+        padding: 10px;
+
+    }
+
+    .Skills {
+        height: fit-content;
+        width: fit-content;
+        margin: 30px;
+        padding: 10px;
+    }
+
+    ul li {
+        height: fit-content;
+        font-size: 0.6rem;
+        margin-top: 10px;
+        padding: 10px;
+       
+    }
+
+    ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    padding: 15px;
+
+}
+
+.Contact-h2 {
+    text-align: center;
+}
+
+
+.email-icon,
+.insta-icon,
+.linkedin-icon,
+.githup-icon {
+  
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 11%;
+}
+
+.end-hr {
+    width: 80%;
+    margin-left: 11%;
+
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.copywrite-para {
+    font-size: xx-small;
+    margin-left: 10%;
+}
+
+.whats-num {
+   font-size: xx-small;
+   margin-left: 10%;
+
+}
+
+    img {
+        height: 80%;
+        width: 50%;
+        object-fit: cover;
+
+    }
+
+    .Contact {
+    margin-left: 20%;
+
+}
+}
+
+@media (min-width:580px) and (max-width:647px){
+   
+
+body {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .header {
+        display: flex;
+        height: 100%;
+        width: fit-content;
+        margin: 30px;
+        padding: 10px;
+    }
+
+    .img-div {
+        text-align: center;
+        padding: 10px;
+        margin-top: 4rem;
+    }
+
+
+    h1,
+    h2,
+    h3,
+    p,
+    .a-class {
+        margin: 2px;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+
+    h1 {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    h2 {
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 13;
+        margin-top:5px;
+        letter-spacing: 2px;
+    }
+
+    .a-class {
+        width: fit-content;
+        padding: 5px;
+        font-size: 10px;
+        margin-left: 1.5rem;
+    }
+
+    .about_me_h2 {
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+
+    .about-me {
+        height: fit-content;
+        width: fit-content;
+        margin: 30px;
+        padding: 10px;
+
+    }
+
+    .Skills {
+        height: fit-content;
+        width: fit-content;
+        margin: 15%px;
+        padding: 10px;
+    }
+
+    ul li {
+        height: fit-content;
+        font-size: 0.6rem;
+        margin-top: 10px;
+        padding: 10px;
+       
+    }
+
+    ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    padding: 15px;
+
+}
+
+.Contact-h2 {
+    text-align: center;
+}
+
+
+.email-icon,
+.insta-icon,
+.linkedin-icon,
+.githup-icon {
+  
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 11%;
+}
+
+.end-hr {
+    width: 80%;
+    margin-left: 11%;
+
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.copywrite-para {
+    font-size: xx-small;
+    margin-left: 10%;
+}
+
+.whats-num {
+   font-size: xx-small;
+   margin-left: 10%;
+
+}
+
+    img {
+        height: 90%;
+        width: 45%;
+        object-fit: cover;
+
+    }
+
+    .Contact {
+    margin-left: 25%;
+
+}
+}
+
+@media (min-width:647px) and (max-width:767px){
+   
+
+body {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .header {
+        display: flex;
+        height: 100%;
+        width: fit-content;
+        margin: 30px;
+        padding: 10px;
+    }
+
+    .img-div {
+        text-align: center;
+        padding: 10px;
+        margin-top: 4rem;
+    }
+
+
+    h1,
+    h2,
+    h3,
+    p,
+    .a-class {
+        margin: 2px;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 10px;
+        margin-top:5px;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+    }
+
+    .a-class {
+        width: fit-content;
+        padding: 5px;
+        font-size: 15px;
+        margin-left: 1.5rem;
+    }
+
+    .about_me_h2 {
+        margin-right: 100px;
+        margin-left: 100px;
+        margin: 10%;
+    }
+
+    .about-me {
+        height: fit-content;
+        width: fit-content;
+        margin: 15%;
+        margin-top:30px ;
+        padding: 25%px;
+
+    }
+
+    .Skills {
+        height: fit-content;
+        width: fit-content;
+        margin: 10%;
+        padding: 10px;
+    }
+
+    ul li {
+        height: fit-content;
+        font-size: 0.6rem;
+        margin-top: 10px;
+        padding: 10px;
+       
+    }
+
+    ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    padding: 15px;
+
+}
+
+.Contact-h2 {
+    text-align: center;
+}
+
+
+.email-icon,
+.insta-icon,
+.linkedin-icon,
+.githup-icon {
+  
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 15%;
+}
+
+.end-hr {
+    width: 80%;
+    margin-left: 11%;
+
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.copywrite-para {
+    font-size: xx-small;
+    margin-left: 10%;
+}
+
+.whats-num {
+   font-size: xx-small;
+   margin-left: 10%;
+
+}
+
+
+
+    img {
+        height: 80%;
+        width: 50%;
+        object-fit: cover;
+
+    }
+
+    .Contact {
+    margin-left: 20%;
+
+}
+}
